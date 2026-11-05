@@ -13,9 +13,9 @@
       --line: #e8ebe6;
       --paper: #fff;
       --canvas: #f6f7f4;
-      --pink: #c8457e;
-      --pink-dark: #9c2f5f;
-      --pink-soft: #fbe9f1;
+      --green: #237b55;
+      --green-dark: #185c3e;
+      --green-soft: #e8f3ec;
       --orange: #e99b58;
       --red: #c75852;
       --shadow: 0 12px 32px rgb(23 39 29 / 5%);
@@ -26,25 +26,25 @@
     body { margin: 0; color: var(--ink); background: var(--canvas); font-size: 14px; }
     button, input, select { font: inherit; }
     button { cursor: pointer; }
-    button:focus-visible, input:focus-visible, select:focus-visible { outline: 3px solid #eaa3c3; outline-offset: 2px; }
+    button:focus-visible, input:focus-visible, select:focus-visible { outline: 3px solid #90c6a7; outline-offset: 2px; }
     .app { display: grid; grid-template-columns: 248px minmax(0, 1fr); min-height: 100vh; max-width: 1800px; margin: auto; }
     .sidebar { display: flex; flex-direction: column; padding: 28px 18px 20px; background: #fff; border-right: 1px solid var(--line); }
     .brand { display: flex; align-items: center; gap: 11px; margin: 0 12px 42px; font-size: 17px; font-weight: 750; letter-spacing: -.5px; }
-    .brand-mark { display: grid; width: 34px; height: 34px; place-items: center; border-radius: 11px; color: #fff; background: var(--pink); }
+    .brand-mark { display: grid; width: 34px; height: 34px; place-items: center; border-radius: 11px; color: #fff; background: var(--green); }
     .brand-mark svg { width: 20px; height: 20px; }
     .nav-label { margin: 0 12px 10px; color: #a0a9a2; font-size: 10px; font-weight: 700; letter-spacing: 1.3px; text-transform: uppercase; }
     .nav { display: grid; gap: 5px; }
     .nav button { display: flex; align-items: center; gap: 12px; width: 100%; padding: 11px 12px; border: 0; border-radius: 9px; color: #737e76; text-align: left; background: transparent; transition: .18s ease; }
     .nav button:hover { color: var(--ink); background: #f6f8f5; }
-    .nav button.active { color: var(--pink-dark); font-weight: 650; background: var(--pink-soft); }
+    .nav button.active { color: var(--green-dark); font-weight: 650; background: var(--green-soft); }
     .nav svg { width: 18px; height: 18px; stroke: currentColor; }
     .sidebar-bottom { margin-top: auto; }
-    .tip { padding: 16px; border: 1px solid #f5dce8; border-radius: 13px; background: #fdf6f9; }
-    .tip-icon { display: grid; width: 30px; height: 30px; margin-bottom: 12px; place-items: center; border-radius: 9px; color: var(--pink); background: #fbe4ee; }
+    .tip { padding: 16px; border: 1px solid #e6efe8; border-radius: 13px; background: #f7faf7; }
+    .tip-icon { display: grid; width: 30px; height: 30px; margin-bottom: 12px; place-items: center; border-radius: 9px; color: var(--green); background: #e6f2e9; }
     .tip strong { display: block; margin-bottom: 5px; font-size: 12px; }
     .tip p { margin: 0; color: var(--muted); font-size: 11px; line-height: 1.6; }
     .profile { display: flex; align-items: center; gap: 10px; margin: 20px 4px 0; padding-top: 17px; border-top: 1px solid var(--line); }
-    .avatar { display: grid; width: 35px; height: 35px; place-items: center; border-radius: 50%; color: #8e2d58; font-weight: 700; background: #f8e1ec; }
+    .avatar { display: grid; width: 35px; height: 35px; place-items: center; border-radius: 50%; color: #37614a; font-weight: 700; background: #e4eee5; }
     .profile-name { font-size: 12px; font-weight: 650; }
     .profile-sub { margin-top: 3px; color: var(--muted); font-size: 10px; }
     main { min-width: 0; padding: 30px clamp(20px, 4vw, 56px) 48px; }
@@ -59,8 +59,8 @@
     h1 { margin: 0; font-size: clamp(25px, 3vw, 31px); letter-spacing: -1.1px; }
     .subtitle { margin: 7px 0 0; color: var(--muted); font-size: 13px; }
     .button { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 10px 14px; border: 1px solid transparent; border-radius: 8px; font-size: 12px; font-weight: 650; transition: .18s ease; }
-    .button-primary { color: #fff; background: var(--pink); }
-    .button-primary:hover { background: var(--pink-dark); }
+    .button-primary { color: #fff; background: var(--green); }
+    .button-primary:hover { background: var(--green-dark); }
     .button-secondary { border-color: var(--line); color: #536057; background: #fff; }
     .button-secondary:hover { border-color: #cbd6cd; background: #fafcf9; }
     .button svg { width: 16px; height: 16px; }
@@ -69,13 +69,13 @@
     .stat-card { min-height: 145px; padding: 18px 20px; }
     .stat-top { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
     .stat-label { color: var(--muted); font-size: 12px; font-weight: 550; }
-    .stat-icon { display: grid; width: 32px; height: 32px; place-items: center; border-radius: 9px; color: var(--pink); background: #fceef4; }
+    .stat-icon { display: grid; width: 32px; height: 32px; place-items: center; border-radius: 9px; color: var(--green); background: #edf5ef; }
     .stat-icon.orange { color: #b8793e; background: #fcf2e9; }
     .stat-icon.neutral { color: #697b9a; background: #eef1f7; }
     .stat-icon svg { width: 17px; height: 17px; }
     .stat-value { margin-top: 14px; font-size: 25px; font-weight: 720; letter-spacing: -.7px; }
     .stat-note { display: flex; align-items: center; gap: 5px; margin-top: 7px; color: var(--muted); font-size: 10px; }
-    .positive { color: var(--pink); }
+    .positive { color: var(--green); }
     .negative { color: var(--red); }
     .content-grid { display: grid; grid-template-columns: minmax(0, 1.65fr) minmax(270px, .95fr); gap: 18px; margin-bottom: 18px; }
     .panel { min-width: 0; padding: 19px 20px; }
@@ -84,8 +84,8 @@
     .panel-subtitle { margin: 5px 0 0; color: var(--muted); font-size: 10px; }
     .chart-legend { display: flex; gap: 13px; color: var(--muted); font-size: 10px; }
     .legend-item { display: flex; align-items: center; gap: 5px; }
-    .legend-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--pink); }
-    .legend-dot.income { background: #f6d5e4; }
+    .legend-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--green); }
+    .legend-dot.income { background: #dcebe1; }
     .chart-wrap { position: relative; height: 210px; }
     canvas { display: block; width: 100%; height: 100%; }
     .category-list { display: grid; gap: 17px; padding-top: 5px; }
@@ -95,7 +95,7 @@
     .category-amount { font-size: 11px; font-weight: 650; text-align: right; }
     .category-meta { display: flex; justify-content: space-between; gap: 6px; margin-top: 4px; color: var(--muted); font-size: 9px; }
     .progress-track { height: 5px; margin-top: 7px; overflow: hidden; border-radius: 9px; background: #edf0ec; }
-    .progress-fill { height: 100%; border-radius: inherit; background: #e07aa8; }
+    .progress-fill { height: 100%; border-radius: inherit; background: #73ad88; }
     .progress-fill.over { background: var(--orange); }
     .transactions-panel { padding: 0; overflow: hidden; }
     .transactions-head { display: flex; justify-content: space-between; align-items: center; gap: 14px; padding: 18px 20px 14px; }
@@ -113,7 +113,7 @@
     .merchant-note { margin-top: 3px; color: var(--muted); font-size: 9px; font-weight: 400; }
     .badge { display: inline-flex; padding: 4px 8px; border-radius: 20px; color: #65756a; background: #f1f4f0; font-size: 9px; }
     .amount { font-weight: 650; text-align: right; }
-    .amount.income { color: var(--pink); }
+    .amount.income { color: var(--green); }
     .row-action { width: 29px; height: 29px; border: 0; border-radius: 6px; color: #859087; background: transparent; }
     .row-action:hover { color: var(--red); background: #fbf0ef; }
     .empty-state { padding: 34px 20px; color: var(--muted); text-align: center; font-size: 12px; }
@@ -122,9 +122,9 @@
     .goal-progress { display: flex; justify-content: space-between; margin: 17px 0 8px; font-size: 11px; }
     .goal-progress span:last-child { color: var(--muted); }
     .goal-track { height: 8px; overflow: hidden; border-radius: 8px; background: #edf0ec; }
-    .goal-fill { width: 0; height: 100%; border-radius: inherit; background: linear-gradient(90deg, #c8457e, #ec9dc0); transition: width .3s ease; }
+    .goal-fill { width: 0; height: 100%; border-radius: inherit; background: linear-gradient(90deg, #317f58, #80b891); transition: width .3s ease; }
     .goal-foot { display: flex; justify-content: space-between; margin-top: 8px; color: var(--muted); font-size: 10px; }
-    .text-button { padding: 0; border: 0; color: var(--pink); font-size: 10px; font-weight: 650; background: transparent; }
+    .text-button { padding: 0; border: 0; color: var(--green); font-size: 10px; font-weight: 650; background: transparent; }
     .toast { position: fixed; right: 24px; bottom: 24px; z-index: 20; padding: 12px 16px; border-radius: 9px; color: #fff; background: #24372b; box-shadow: 0 8px 24px #17271d33; font-size: 12px; opacity: 0; transform: translateY(8px); pointer-events: none; transition: .2s ease; }
     .toast.show { opacity: 1; transform: translateY(0); }
     dialog { width: min(440px, calc(100% - 32px)); padding: 0; border: 1px solid var(--line); border-radius: 14px; box-shadow: 0 24px 80px #10201533; }
@@ -607,10 +607,10 @@
           const center = pad.left + groupWidth * (index + .5);
           const incomeHeight = value.income / ceiling * chartHeight;
           const expenseHeight = value.expense / ceiling * chartHeight;
-          context.fillStyle = "#f6d5e4";
+          context.fillStyle = "#dcebe1";
           roundRect(context, center - barWidth - 2, pad.top + chartHeight - incomeHeight, barWidth, incomeHeight, 4);
           context.fill();
-          context.fillStyle = "#c8457e";
+          context.fillStyle = "#39845d";
           roundRect(context, center + 2, pad.top + chartHeight - expenseHeight, barWidth, expenseHeight, 4);
           context.fill();
           context.fillStyle = "#8b958e";
